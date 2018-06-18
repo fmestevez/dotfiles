@@ -120,6 +120,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'kaicataldo/material.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'myusuf3/numbers.vim'
 
 call plug#end()
 

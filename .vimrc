@@ -106,6 +106,11 @@ endif
 " Custom ignore for ctrl-p
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|target|dist|www)|(\.(swp|ico|git|svn))$'
 
+" NERDTree options
+nmap <F6> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
+
+" Autoload Plug
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -114,7 +119,6 @@ endif
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-" Fuzzy file opener
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'

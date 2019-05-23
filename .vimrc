@@ -1,5 +1,7 @@
 " Don't try to be vi compatible
 set nocompatible
+set nobackup
+set nowritebackup
 
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
@@ -105,6 +107,7 @@ endif
 
 " Custom ignore for ctrl-p
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|target|dist|www)|(\.(swp|ico|git|svn))$'
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git --ignore node_modules --ignore bower_components --ignore www --ignore target --ignore dist -l -g ""'
 
 " NERDTree options
 nmap <F6> :NERDTreeToggle<CR>
@@ -125,7 +128,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'kaicataldo/material.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'myusuf3/numbers.vim'
-Plug 'neoclide/coc.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
 

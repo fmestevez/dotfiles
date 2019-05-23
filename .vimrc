@@ -125,6 +125,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'kaicataldo/material.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'myusuf3/numbers.vim'
+Plug 'neoclide/coc.vim'
 
 call plug#end()
 

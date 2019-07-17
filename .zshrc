@@ -123,5 +123,5 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export DEFAULT_USER=bant
+export DEFAULT_USER=$(whoami)
 prompt_context(){}

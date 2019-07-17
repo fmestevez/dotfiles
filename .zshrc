@@ -8,7 +8,7 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -98,14 +98,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Used apps:
+# neovim - https://neovim.io/
+# bat - https://github.com/sharkdp/bat#installation
+# exa - https://the.exa.website
+# ag - https://github.com/ggreer/the_silver_searcher
+# nvm - https://github.com/nvm-sh/nvm
+# z - https://github.com/rupa/z
+# fzf - https://github.com/junegunn/fzf
+
 alias vim='nvim'
 alias cat='bat'
 alias ls='exa --long --header --git'
 
-export PATH="$HOME/.cargo/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git --ignore node_modules --ignore bower_components --ignore www --ignore target --ignore dist -l -g ""'
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -117,3 +123,5 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export DEFAULT_USER=bant
+prompt_context(){}

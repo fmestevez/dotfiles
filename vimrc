@@ -129,6 +129,14 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" Fugitive
+nnoremap \<space> :Gstatus<cr>
+
+" Markdown
+hi def link markdownH1Delimiter           PreProc
+hi def link markdownH2Delimiter           Type
+hi def link markdownH3Delimiter           Directory
+
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'pangloss/vim-javascript'
@@ -139,6 +147,10 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mxw/vim-jsx'
 Plug 'chemzqm/vim-jsx-improve', { 'for': 'javascript.jsx' }
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-eunuch'
 
 call plug#end()
 

@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/bant/.oh-my-zsh"
+export ZSH="/home/bant/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,7 +68,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,9 +110,17 @@ source $ZSH/oh-my-zsh.sh
 alias vim='nvim'
 alias cat='bat'
 alias ls='exa --long --header --git'
+alias yay='yay --nodiffmenu --nocleanmenu'
 
 export NVM_DIR="$HOME/.nvm"
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git --ignore node_modules --ignore bower_components --ignore www --ignore target --ignore dist -l -g ""'
+
+# FZF
+export FZF_CTRL_T_OPTS="--preview '(bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -500'"
+export FZF_DEFAULT_COMMAND="ag --hidden --ignore .git --ignore node_modules --ignore bower_components --ignore www --ignore target --ignore dist -l -g '' 2> /dev/null"
+
+fpath+=("$HOME/.zsh/pure")
+autoload -U promptinit; promptinit
+prompt pure
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -123,5 +131,22 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export DEFAULT_USER=$(whoami)
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/bant/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/bant/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/bant/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/bant/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+eval "$(pyenv init -)"
+
+export DEFAULT_USER=bant
 prompt_context(){}

@@ -104,14 +104,23 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-
-" Custom ignore for ctrl-p
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|target|dist|www)|(\.(swp|ico|git|svn))$'
-let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git --ignore node_modules --ignore bower_components --ignore www --ignore target --ignore dist -l -g ""'
-
-" NERDTree options
-nmap <F6> :NERDTreeToggle<CR>
-let NERDTreeShowHidden = 1
+" fzf - the fuzzy finder of all the things
+let g:fzf_files_options =
+  \ '--reverse ' .
+  \ '--preview ' .
+  \ '"(bat --style=numbers --color=always {} || cat {}) '.
+  \ '2> /dev/null | head -'.&lines.'"'
+let g:fzf_layout = { 'down': '~60%' }
+nnoremap <C-p> :Files<cr>
+let $FZF_DEFAULT_COMMAND = 
+  \ 'ag --hidden ' .
+  \ '--ignore .git ' .
+  \ '--ignore node_modules ' .
+  \ '--ignore bower_components ' .
+  \ '--ignore www ' .
+  \ '--ignore target ' .
+  \ '--ignore dist ' .
+  \ '-l -g "" 2> /dev/null'
 
 " Autoload Plug
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
@@ -122,16 +131,21 @@ endif
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'kaicataldo/material.vim'
-Plug 'scrooloose/nerdtree'
 Plug 'myusuf3/numbers.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'mxw/vim-jsx'
+Plug 'chemzqm/vim-jsx-improve', { 'for': 'javascript.jsx' }
 
 call plug#end()
 
 " Color scheme (terminal)
+syntax enable
 set background=dark
-colorscheme material
+colorscheme material 
+
+" Set the register and xcip
+set clipboard+=unnamedplus

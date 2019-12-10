@@ -1,0 +1,1 @@
+/home/bant/.dotfiles/zsh/configs/git.zsh

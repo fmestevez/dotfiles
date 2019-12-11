@@ -1,0 +1,5 @@
+" Set the register and xclip config
+
+set clipboard+=unnamedplus
+
+" vim:ft=vim

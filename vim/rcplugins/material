@@ -2,7 +2,4 @@
 
 Plug 'kaicataldo/material.vim'
 
-set background=dark
-colorscheme material
-
 "vim:ft=vim

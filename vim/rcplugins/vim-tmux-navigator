@@ -1,0 +1,5 @@
+" Integrate Vim and tmux navigation bindings
+
+Plug 'christoomey/vim-tmux-navigator'
+
+" vim:ft=vim

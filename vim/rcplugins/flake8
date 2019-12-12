@@ -1,0 +1,7 @@
+" PEP 8 checking for Python
+" Needs flake8 package installed in host
+" Activate with <F7>
+
+Plug 'nvie/vim-flake8'
+
+" vim:ft=vim

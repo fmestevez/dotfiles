@@ -6,6 +6,8 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
+let python_highlight_all=1
+
 syntax enable
 set background=dark
 colorscheme material

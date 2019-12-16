@@ -1,0 +1,12 @@
+" Autocompletion
+" After installing plugin, run :CocInstall coc-tsserver coc-eslint coc-json coc-prettier coc-css
+" Modify config JSON with :CocConfig
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" === coc.nvim === "
+nmap <silent> <leader>dd <Plug>(coc-definition)
+nmap <silent> <leader>dr <Plug>(coc-references)
+nmap <silent> <leader>dj <Plug>(coc-implementation)
+
+" vim:ft=vim

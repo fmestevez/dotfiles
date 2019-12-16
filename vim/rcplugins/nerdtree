@@ -1,0 +1,9 @@
+" NERDTree file browser
+
+Plug 'scrooloose/nerdtree'
+
+" NERDTree options
+nmap <F6> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
+
+" vim:ft=vim

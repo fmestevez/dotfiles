@@ -112,6 +112,10 @@ alias cat='bat'
 alias ls='exa --long --header --git'
 alias yay='yay --nodiffmenu --nocleanmenu'
 
+# Adds ~/bin to PATH
+export PATH="$HOME/bin:$PATH"
+
+# Adds NVM to PATH
 export NVM_DIR="$HOME/.nvm"
 
 # FZF

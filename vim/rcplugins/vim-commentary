@@ -1,0 +1,6 @@
+" Comment stuff out
+" e.g. gc/gcc/gcap/gcgc
+
+Plug 'tpope/vim-commentary'
+
+" vim:ft=vim

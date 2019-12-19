@@ -17,18 +17,11 @@
   "diagnostic.checkCurrentLine": true,
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "markdown",
-    "Markdown",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
   ],
-  "prettier.requireConfig": true,
+  "prettier.requireConfig": false,
   "eslint.autoFixOnSave": true,
   "html.format.enable": true,
   "tsserver.formatOnType": true,
-  "coc.preferences.formatOnType": true
+  "coc.preferences.formatOnType": false
 }
 

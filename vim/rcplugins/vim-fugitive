@@ -1,0 +1,6 @@
+" Git bindings for VIM
+" :G stuff
+
+Plug 'tpope/vim-fugitive'
+
+" vim:ft=vim

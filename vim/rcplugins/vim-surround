@@ -1,0 +1,6 @@
+" Change surrounding stuff
+" e.g. cd'" or ds'"
+
+Plug 'tpope/vim-surround'
+
+" vim:ft=vim

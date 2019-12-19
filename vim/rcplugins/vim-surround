@@ -1,5 +1,5 @@
 " Change surrounding stuff
-" e.g. cd'" or ds'"
+" e.g. cs'" or ds'"
 
 Plug 'tpope/vim-surround'
 

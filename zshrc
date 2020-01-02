@@ -111,6 +111,7 @@ alias vim='nvim'
 alias cat='bat'
 alias ls='exa --long --header --git'
 alias yay='yay --nodiffmenu --nocleanmenu'
+alias weather='curl wttr.in'
 
 # Adds ~/bin to PATH
 export PATH="$HOME/bin:$PATH"

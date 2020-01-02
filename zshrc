@@ -112,6 +112,8 @@ alias cat='bat'
 alias ls='exa --long --header --git'
 alias yay='yay --nodiffmenu --nocleanmenu'
 alias weather='curl wttr.in'
+alias rates='curl rate.sx'
+alias chtsh='cht.sh' # Needs https://github.com/chubin/cheat.sh
 
 # Adds ~/bin to PATH
 export PATH="$HOME/bin:$PATH"

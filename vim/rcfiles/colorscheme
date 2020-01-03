@@ -10,6 +10,6 @@ let python_highlight_all=1
 
 syntax enable
 set background=dark
-colorscheme material
+colorscheme gruvbox
 
 " vim:ft=vim

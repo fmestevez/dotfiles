@@ -1,0 +1,5 @@
+" Gruvbox color scheme
+
+Plug 'morhetz/gruvbox'
+
+" vim:ft=vim

@@ -25,22 +25,6 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
-" Python specific formatting
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
-
-" Web specific formatting
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
-
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
 
@@ -48,9 +32,14 @@ set list listchars=tab:»·,trail:·,nbsp:·
 set nojoinspaces
 
 " Display relative line numbers, with absolute line number for current line
-set number
+set number relativenumber
 set numberwidth=5
-set relativenumber
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 " When the type of shell script is /bin/sh, assume a POSIX-compatible
 " shell for syntax highlighting purposes.

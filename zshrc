@@ -99,13 +99,19 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Used apps:
+# zsh-syntax-highlighting - https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
+# tpm - https://github.com/tmux-plugins/tpm
 # neovim - https://neovim.io/
+# vim-plug - https://github.com/junegunn/vim-plug#neovim
+# denite - https://github.com/Shougo/denite.nvim#requirements
 # bat - https://github.com/sharkdp/bat#installation
 # exa - https://the.exa.website
 # ag - https://github.com/ggreer/the_silver_searcher
 # nvm - https://github.com/nvm-sh/nvm
 # z - https://github.com/rupa/z
 # fzf - https://github.com/junegunn/fzf
+# pure - https://github.com/sindresorhus/pure#manually
+# cheat.sh - https://github.com/sindresorhus/pure#manually
 
 alias vim='nvim'
 alias cat='bat'
@@ -114,7 +120,7 @@ alias yay='yay --nodiffmenu --nocleanmenu'
 alias weather='curl wttr.in'
 alias weather2='curl v2.wttr.in'
 alias rates='curl rate.sx'
-alias chtsh='cht.sh' # Needs https://github.com/chubin/cheat.sh
+alias chtsh='cht.sh'
 
 # Adds ~/bin to PATH
 export PATH="$HOME/bin:$PATH"

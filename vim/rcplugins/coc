@@ -1,5 +1,5 @@
 " Autocompletion
-" After installing plugin, run :CocInstall coc-tsserver coc-eslint coc-json coc-prettier coc-css
+" After installing plugin, run :CocInstall coc-tsserver coc-eslint coc-json coc-prettier coc-css coc-python coc-html
 " Modify config JSON with :CocConfig
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

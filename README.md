@@ -13,7 +13,7 @@
 * z - https://github.com/rupa/z
 * fzf - https://github.com/junegunn/fzf#installation
 * pure - https://github.com/sindresorhus/pure#manually
-* cheat.sh - https://github.com/sindresorhus/pure#manually
+* cheat.sh - https://github.com/chubin/cheat.sh#installation
 
 ## Aliases
 * alias vim='nvim'

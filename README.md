@@ -1,6 +1,6 @@
-## Bant's dotfiles
+# Bant's dotfiles
 
-# Used apps
+## Used apps
 * zsh-syntax-highlighting - https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
 * tpm - https://github.com/tmux-plugins/tpm#installation
 * neovim - https://github.com/neovim/neovim#install-from-package
@@ -15,7 +15,7 @@
 * pure - https://github.com/sindresorhus/pure#manually
 * cheat.sh - https://github.com/sindresorhus/pure#manually
 
-# Aliases
+## Aliases
 * alias vim='nvim'
 * alias cat='bat'
 * alias ls='exa --long --header --git'

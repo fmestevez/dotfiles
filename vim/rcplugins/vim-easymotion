@@ -1,0 +1,5 @@
+" Easymotion plugin
+
+Plug 'easymotion/vim-easymotion'
+
+" vim:ft=vim

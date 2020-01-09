@@ -1,6 +1,6 @@
 # Bant's dotfiles
 
-## Used apps
+## Requirements
 * zsh-syntax-highlighting - https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
 * tpm - https://github.com/tmux-plugins/tpm#installation
 * neovim - https://github.com/neovim/neovim#install-from-package

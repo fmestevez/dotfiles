@@ -1,0 +1,7 @@
+" Scratch area for VIM
+
+Plug 'mtth/scratch.vim'
+
+let g:scratch_persistence_file = '.scratch.vim'
+
+" vim:ft=vim

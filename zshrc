@@ -112,6 +112,7 @@ source $ZSH/oh-my-zsh.sh
 # fzf - https://github.com/junegunn/fzf
 # pure - https://github.com/sindresorhus/pure#manually
 # cheat.sh - https://github.com/sindresorhus/pure#manually
+# nnn - https://github.com/jarun/nnn#selection
 
 alias vim='nvim'
 alias cat='bat'
@@ -130,6 +131,7 @@ export NVM_DIR="$HOME/.nvm"
 # FZF
 export FZF_CTRL_T_OPTS="--preview '(bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -500'"
 export FZF_DEFAULT_COMMAND="ag --hidden --ignore .git --ignore node_modules --ignore bower_components --ignore www --ignore target --ignore dist -l -g '' 2> /dev/null"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Pure shell
 fpath+=("$HOME/.zsh/pure")
@@ -144,9 +146,6 @@ prompt pure
 if [ -f ~/.z_home/z.sh ]; then
   . ~/.z_home/z.sh
 fi
-
-# FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # nnn
 n ()

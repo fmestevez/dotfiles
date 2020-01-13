@@ -177,6 +177,12 @@ n ()
     fi
 }
 
+# Set vim as default editor
+export EDITOR="nvim"
+
+# Use editor in nnn
+export NNN_USE_EDITOR=1
+
 # Exports default user
 export DEFAULT_USER=bant
 prompt_context(){}

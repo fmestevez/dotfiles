@@ -14,6 +14,7 @@
 * fzf - https://github.com/junegunn/fzf#installation
 * pure - https://github.com/sindresorhus/pure#manually
 * cheat.sh - https://github.com/chubin/cheat.sh#installation
+* nnn - https://github.com/jarun/nnn#selection
 
 ## Aliases
 * alias vim='nvim'

@@ -1,0 +1,6 @@
+" nnn file browser
+" Requires nnn installed: https://github.com/jarun/nnn#installation
+
+Plug 'mcchrish/nnn.vim'
+
+" vim:ft=vim

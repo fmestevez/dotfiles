@@ -15,4 +15,4 @@
 * pure - https://github.com/sindresorhus/pure#manually
 * cheat.sh - https://github.com/chubin/cheat.sh#installation
 * nnn - https://github.com/jarun/nnn#selection
-
+* pywal - https://github.com/dylanaraps/pywal/wiki/Installation

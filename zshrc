@@ -113,6 +113,7 @@ source $ZSH/oh-my-zsh.sh
 # pure - https://github.com/sindresorhus/pure#manually
 # cheat.sh - https://github.com/sindresorhus/pure#manually
 # nnn - https://github.com/jarun/nnn#selection
+# pywal - https://github.com/dylanaraps/pywal/wiki/Installation
 
 alias vim='nvim'
 alias cat='bat'
@@ -146,6 +147,12 @@ prompt pure
 if [ -f ~/.z_home/z.sh ]; then
   . ~/.z_home/z.sh
 fi
+
+# Pywal
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+(cat ~/.cache/wal/sequences &)
 
 # nnn
 n ()

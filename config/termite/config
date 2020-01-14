@@ -41,9 +41,9 @@ icon_name = terminal
 # "off", "left" or "right"
 #scrollbar = off
 
-font = Fira Code 12
-font = Noto Color Emoji 12
-font = Monospace 12
+font = Fira Code 10
+font = Noto Color Emoji 10
+font = Monospace 10
 
 
 [hints]

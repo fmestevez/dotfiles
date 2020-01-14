@@ -150,7 +150,7 @@ if [ -f ~/.z_home/z.sh ]; then
 fi
 
 # Pywal
-(/usr/bin/cat ~/.cache/wal/sequences &)
+(/bin/cat ~/.cache/wal/sequences &)
 
 # nnn
 n ()

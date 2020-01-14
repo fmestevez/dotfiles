@@ -115,6 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # nnn - https://github.com/jarun/nnn#selection
 # pywal - https://github.com/dylanaraps/pywal/wiki/Installation
 
+alias tam='tmux new-session -A -s main'
 alias vim='nvim'
 alias cat='bat'
 alias ls='exa --long --header --git'
@@ -149,10 +150,7 @@ if [ -f ~/.z_home/z.sh ]; then
 fi
 
 # Pywal
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-(cat ~/.cache/wal/sequences &)
+(/usr/bin/cat ~/.cache/wal/sequences &)
 
 # nnn
 n ()

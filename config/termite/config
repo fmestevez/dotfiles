@@ -1,7 +1,10 @@
 [options]
+
 font = Fira Code 12
 font = Noto Color Emoji 12
 font = Monospace 12
+
+
 [colors]
 
 # special
